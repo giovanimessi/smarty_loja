@@ -3,15 +3,13 @@
 
 require "./lib/autoload.php";
 
-$smarty = new Smarty();
+$smarty = new Template();
 
 
 
 $smarty->assign("nome","Giovani Moura Messias");
 
-$smarty->setTemplateDir('view/');
-$smarty->setCompileDir('view/compiler/');
-$smarty->setCacheDir('view/cache/');
+Rota::get_Pagina();
 
 $smarty->display('index.tpl');
 
